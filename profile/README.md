@@ -1,0 +1,29 @@
+# DHL xArm Vision Pick-and-Place
+
+xArm + OAK-D 뎁스카메라 + GPU 서버로 **특정 물체를 인식해서 집어 옮기는** 픽앤플레이스 시스템.
+
+## 시스템 구성
+
+```
+OAK-D(팔 끝) ──USB──> 라즈베리파이 ──WiFi──> GPU 서버 ──유선LAN──> xArm
+                       (영상 중계)         (인식·좌표변환·제어)    (집기 실행)
+```
+
+| 장치 | 역할 | Repo |
+|------|------|------|
+| 라즈베리파이 | OAK-D 영상/뎁스 중계 | [`rpi4-server`](https://github.com/dhl-xarm/rpi4-server) |
+| GPU 서버 | 인식 + 좌표변환 + xArm 제어 | [`gpu-server`](https://github.com/dhl-xarm/gpu-server) |
+| (기구) | 3D 출력물 (카메라 마운트 등) | [`hardware`](https://github.com/dhl-xarm/hardware) |
+
+## 처음이라면 여기부터
+
+1. [문서 홈](https://github.com/dhl-xarm/docs)
+2. [ArUco 보드 만들기](https://github.com/dhl-xarm/docs/blob/main/01-aruco-board.md)
+3. [핸드아이 캘리브레이션](https://github.com/dhl-xarm/docs/blob/main/02-hand-eye-calibration.md)
+
+## 진행 상황
+
+- [x] 카메라(OAK-D) 뎁스 + 3D 좌표 취득
+- [x] 라즈베리파이 → GPU 서버 전송
+- [ ] **핸드아이 캘리브레이션** ← 현재 단계
+- [ ] 물체 인식(YOLO) + 집기 동작
