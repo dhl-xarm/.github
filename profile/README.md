@@ -24,7 +24,7 @@ OAK-D(팔 끝) ──USB──> 라즈베리파이 ──WiFi──> GPU 서버 
 
 ## 운영/인수인계 (자리 바꿀 때마다)
 
-`gpu-server/setup_positions.py` 1회 실행 → 로봇을 손으로 움직여 **테이블 높이 · 스캔(초기) 위치 · 놓는 위치**를 잡으면 `config.ini [positions]` 가 자동으로 채워짐. 이후 `pick/pick_place.py` 실행 시 시작할 때 초기 위치로 자동 이동. (코드 수정 불필요)
+`gpu-server/setup_positions.py` 1회 실행 → 로봇을 손으로 움직여 **테이블 높이 · 스캔 위치 · 놓는 위치**를 잡으면 `config.ini [positions]` 가 자동으로 채워짐. 이후 `pick/pick_place.py` 실행 시 무조건 **① 로봇 홈(initial, gohome) → ② 스캔 위치** 순으로 자동 이동. (코드 수정 불필요)
 
 ## 진행 상황
 
