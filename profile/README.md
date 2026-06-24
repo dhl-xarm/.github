@@ -18,9 +18,10 @@ OAK-D(팔 끝) ──USB──> 라즈베리파이 ──WiFi──> GPU 서버 
 ## 처음이라면 여기부터
 
 1. [문서 홈](https://github.com/dhl-xarm/docs)
-2. [ArUco 보드 만들기](https://github.com/dhl-xarm/docs/blob/main/01-aruco-board.md)
-3. [핸드아이 캘리브레이션](https://github.com/dhl-xarm/docs/blob/main/02-hand-eye-calibration.md)
-4. [픽앤플레이스 + 처음 셋업 프로토콜](https://github.com/dhl-xarm/docs/blob/main/03-pick-place.md)
+2. [로봇팔 연결 (IP 맞추기)](https://github.com/dhl-xarm/docs/blob/main/00-robot-connection.md)
+3. [ArUco 보드 만들기](https://github.com/dhl-xarm/docs/blob/main/01-aruco-board.md)
+4. [핸드아이 캘리브레이션](https://github.com/dhl-xarm/docs/blob/main/02-hand-eye-calibration.md)
+5. [픽앤플레이스 + 처음 셋업 프로토콜](https://github.com/dhl-xarm/docs/blob/main/03-pick-place.md)
 
 ## 운영/인수인계 (자리 바꿀 때마다)
 
